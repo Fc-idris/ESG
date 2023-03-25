@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>Title</title>
+</head>
+<body>
+<table th:each="i:${esgs}">
+
+    <tr >
+        <td>市场缩写</td>
+        <td th:text="${i.market}"></td>
+    </tr>
+
+    <tr >
+        <td>证券缩写</td>
+        <td th:text="${i.name}"></td>
+
+    </tr>
+    <tr >
+        <td>年份</td>
+        <td th:text="${i.year}"></td>
+
+    </tr>
+    <tr >
+        <td>分数</td>
+        <td th:text="${i.score}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
